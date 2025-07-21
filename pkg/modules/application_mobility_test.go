@@ -13,8 +13,8 @@ import (
 	"testing"
 
 	certmanagerv1 "github.com/cert-manager/cert-manager/pkg/apis/certmanager/v1"
-	csmv1 "github.com/dell/csm-operator/api/v1"
-	operatorutils "github.com/dell/csm-operator/pkg/operatorutils"
+	csmv1 "eos2git.cec.lab.emc.com/CSM/csm-operator/api/v1"
+	operatorutils "eos2git.cec.lab.emc.com/CSM/csm-operator/pkg/operatorutils"
 	"github.com/stretchr/testify/assert"
 	velerov1 "github.com/vmware-tanzu/velero/pkg/apis/velero/v1"
 	appsv1 "k8s.io/api/apps/v1"
