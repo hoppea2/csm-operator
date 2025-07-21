@@ -1,4 +1,4 @@
-module github.com/dell/csm-operator
+module eos2git.cec.lab.emc.com/CSM/csm-operator
 
 go 1.24.0
 
