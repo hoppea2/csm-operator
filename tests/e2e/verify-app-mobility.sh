@@ -21,7 +21,7 @@ RESTORE_NAME=r$BACKUP_NAME_EXT
 echo "*** make sure dellctl is installed"
 if [ ! -f ./dellctl ]; then
   echo "installing dellctl"
-  wget https://github.com/dell/csm/releases/download/v1.11.1/dellctl
+  wget https://eos2git.cec.lab.emc.com/CSM/csm/releases/download/v1.11.1/dellctl
   if [ $? -ne 0 ]; then
     echo "failed to install dellctl."
     exit 1
