@@ -96,16 +96,16 @@ test: manifests gen-semver fmt vet envtest ## Run tests.
 	KUBEBUILDER_ASSETS="$(shell $(ENVTEST) use $(ENVTEST_K8S_VERSION) -p path)" go test ./... -coverprofile cover.out
 
 controller-unit-test:
-	go clean -cache && go test -v -coverprofile=c.out github.com/dell/csm-operator/controllers
+	go clean -cache && go test -v -coverprofile=c.out eos2git.cec.lab.emc.com/CSM/csm-operator/controllers
 
 driver-unit-test:
-	go clean -cache && go test -v -coverprofile=c.out github.com/dell/csm-operator/pkg/drivers
+	go clean -cache && go test -v -coverprofile=c.out eos2git.cec.lab.emc.com/CSM/csm-operator/pkg/drivers
 
 module-unit-test:
-	go clean -cache && go test -v -coverprofile=c.out github.com/dell/csm-operator/pkg/modules
+	go clean -cache && go test -v -coverprofile=c.out eos2git.cec.lab.emc.com/CSM/csm-operator/pkg/modules
 
 operatorutils-unit-test:
-	go clean -cache && go test -v -coverprofile=c.out github.com/dell/csm-operator/pkg/operatorutils
+	go clean -cache && go test -v -coverprofile=c.out eos2git.cec.lab.emc.com/CSM/csm-operator/pkg/operatorutils
 
 .PHONY: actions action-help
 actions: ## Run all GitHub Action checks that run on a pull request creation
